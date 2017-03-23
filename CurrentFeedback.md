@@ -1,1 +1,3 @@
-Nothing to see here yet.
+## HW9; Score: 16/20
+
+Fellas, I do think that your project is getting better and more narrowly scoped, which is good. I'm a bit concerned about the ambitious nature of your project, so I'm hoping that as you work through the first example of it, which should be a reproduction of some exisiting work, right, that you start to see what you might further limit your work to. I'm also wondering about your more detailed timeline given that Eric will be visiting grad schools and such. In this next week, I'd really like to see the models that you plan to use and implement with some discussion of how you intend to do that work.
