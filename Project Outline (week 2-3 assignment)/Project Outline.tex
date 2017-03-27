@@ -33,16 +33,6 @@
 %\fancyhf{} % sets both header and footer to nothing
 %\renewcommand{\headrulewidth}{0pt}
 
-
-%%% This defines the solution environment for you to write your solutions
-\newenvironment{soln}
-{\let\oldqedsymbol=\qedsymbol
-	\renewcommand{\qedsymbol}{$ $}
-	\begin{proof}[\bfseries\upshape \color{blue}Solution]\color{blue}}
-	{\end{proof}
-	\renewcommand{\qedsymbol}{\oldqedsymbol}}
-
-
 %%% Document Starts now
 \begin{document} 
 
@@ -77,6 +67,39 @@ hydrogen atom, such as the ground state and choose a simple magnetic field chang
 to explore how this affects the perturbations. This is where we can involve much more E\&M into
 our project, but I suspect it will be far too much work to try and generalize the effects of a
 changing magnetic field any.
+
+\begin{center}
+	{\Large explanation of the models and theoretical calculations}
+\end{center}
+
+The energy levels of a Hydrogen atom are somewhat fixed when it is not interacting with outside matter. The wave function describing the atom as well as the energy levels for each state can be determined to an approximation using the radial wave functions and spherical harmonics and then the energy levels can be determined using the Schr\"{o}dinger's equation. These values are generally expressed in terms of something known as a Hamiltonian, which is essentially the total energies contained within a system. Naturally, there can exist degeneracies within the equations for energies of a system in which more than one condition produce the same energy.
+
+When matter interacts with either an electric or a magnetic field, there are changes in the conditions in which the wave functions and energies are changed (changes in the hamiltonian). These changes in the Hamiltonian affect the solutions to Schr\"{o}dinger's equation and thus the energies. The degeneracies can be removed and instead there will be slight shifts in the energies from the previously found solutions. These shifts are often referred to as perturbations. Perturbation theory is the process of changing the Hamiltonian by a small factor (or perturbation) and calculating the corrections to the energy levels and wave functions using quantum mechanics. 
+
+When a uniform electric field interacts with a hydrogen atom, we see effects/corrections that are referred to as the Stark effect. Similarly, when a uniform magnetic field is introduced and acts upon a hydrogen atom, the Zeeman effect takes affect which is just shifts in the energy levels. If there is a varying magnetic or electric field, there will be an induced electric or magnetic field respectively and this would cause an effect from both of these effects. For the purpose of our project, we will primarily focus solely on the Zeeman effect (that is a uniform magnetic field). Using perturbation theory, we can see the energy corrections to the hydrogen model and see that it depends on the strength of the magnetic field (see calculations in calculations folder).
+
+
+\begin{center}
+	{\Large Updated Project Timeline}
+\end{center}
+(by week)
+\begin{enumerate}
+	\item Finish researching and finding articles on the zeeman effect.
+	\begin{enumerate}
+		\item Explore through research other atoms such as deuterium as well.
+	\end{enumerate} 
+	\item Finish calculations of energy corrections from zeeman effect. 
+	\begin{enumerate}
+		\item Attempt calculations for another atomic nuclei.
+		\item Explore changing magnetic field in time. (oooh scary!)
+	\end{enumerate}
+	\item Explore variable magnetic field strengths and states of hydrogen atom and model data using a computer.
+	\begin{enumerate}
+		\item Also any other atoms we have calculations for.
+		\item Make conclusions.
+	\end{enumerate}
+	\item Finish compiling information into poster
+\end{enumerate}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
