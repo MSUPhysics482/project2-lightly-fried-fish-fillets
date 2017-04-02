@@ -83,13 +83,28 @@ and so the undetermined matrix element in (\ref{<njmls|S_z|nlmls>}) becomes
 \langle n j m_j \ell s| S_z|n j m_j \ell s \rangle &= \langle n j m_j \ell s| \frac{(\vec{J^2}-\vec{L^2}+\vec{S}^2)}{2\vec{J}^2}J_z|n j m_j \ell s \rangle \nonumber \\
 &= m_j \hbar \frac{j(j+1)-\ell(\ell+1)+s(s+1)}{2j(j+1)}.
 \end{align}
-Plugging this back into (\ref{<njmls|S_z|nlmls>}) gives us 
+Plugging this back into (\ref{<njmls|S_z|nlmls>}) gives a general result
 \begin{align}
 \boxed{E_{n}^{(1)} = \mu_BBm_j\left[1+\frac{j(j+1)-\ell(\ell+1)+s(s+1)}{2j(j+1)}\right] = \mu_BBm_jg_L}, \label{E_{n}^{(1)}}
 \end{align}
 where $g_L$ is the Land\'{e} g factor
 \begin{align}
 g_L = 1+\frac{j(j+1)-\ell(\ell+1)+s(s+1)}{2j(j+1)}.
+\end{align}
+Note that for the hydrogen atom such as we have, the spin $s=\frac{1}{2}$ so we can further simplify this to 
+\begin{align}
+E_{n}^{(1)} = \mu_BBm_j\left[1+\frac{j(j+1)-\ell(\ell+1)+\frac{3}{4} }{2j(j+1)} \right].
+\end{align}
+
+\subsection{Example Energy Correction: $2P_{3/2}$}
+This result in (\ref{E_{n}^{(1)}}) can be used for an explicit state of the hydrogen atom. For example, consider the $2P_{3/2}$ state. This has $n=2$, $\ell =1$, $s=\frac{1}{2}$, and $j=\frac{3}{2}$. The $m_j$ values can thus be determined by the set $m_j = \{m_j=j+n|-j \geq m_j \geq j \textrm{ and } n \in \mathbb{Z}\} = \{-\frac{3}{2},-\frac{1}{2}, \frac{1}{2}, \frac{3}{2} \}$, which tells us there will be 4 different energy splits for this state. Using these values gives us a $g_L=\frac{4}{3}$ and so our energy splits are
+\begin{align}
+E_{2P_{3/2}}^{(1)} = \begin{cases}
+\frac{\mu_BB}{2} & m_j = \frac{3}{2}\\ 
+\frac{2\mu_BB}{3} & m_j = \frac{1}{2} \\
+-\frac{2\mu_BB}{3}& m_j = -\frac{1}{2} \\
+-\frac{\mu_BB}{2} &m_j = -\frac{3}{2}
+\end{cases}  
 \end{align}
 
 \begin{thebibliography}{9}
