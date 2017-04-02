@@ -132,17 +132,28 @@ Using our assumption of a vacuum and (\ref{nabla cdot E}), this becomes
  \nabla^2 \vec{E} = \nabla \times B \hat{z} = 0 \implies \frac{\partial^2 E_x}{\partial x^2}+\frac{\partial^2 E_y}{\partial y^2}+\frac{\partial^2 E_z}{\partial z^2}=0
 \end{align}
 
-Consider a one dimensionally changing electric field with spacial dependence and no time dependence. This could potentially be produced in a lab so it is a good example. We can see a trivial solution to this would be $\vec{E} = (ax+by+cz) \hat{x}$, where $a,b,c$ are some constants. By (\ref{nabla times E}), we know 
+Consider a one dimensionally changing electric field with spacial dependence and no time dependence. This could potentially be produced in a lab so it is a good example. We can see a trivial solution to this would be $\vec{E}_1 = (ax+by+cz) \hat{x}$, where $a,b,c$ are some constants. By (\ref{nabla times E}), we know 
 \begin{align}
-c \hat{y}-b \hat{z} = -B \hat{z} \implies b \equiv B \implies \vec{E} = B y\hat{x}.
+c \hat{y}-b \hat{z} = -B \hat{z} \implies b \equiv B \implies \vec{E}_1 = B y\hat{x}. \label{c haty-b hatz}
 \end{align}
-So thus from out magnetic field $\vec{B} = Bt\hat{z}$, we require that there also be an electric field $\vec{E}=By \hat{x}$ in order for Maxwell's equations to be satisfied. Let us double check quickly. 
+So thus from out magnetic field $\vec{B} = Bt\hat{z}$, we require that there also be an electric field $\vec{E}_1=By \hat{x}$ in order for Maxwell's equations to be satisfied. Let us double check quickly. 
 \begin{align}
-&\textrm{(\ref{nabla cdot E}): }\nabla \cdot \vec{E} = \nabla \cdot By \hat{x} = \frac{\partial}{\partial x} By = 0 \hspace{1cm} \checkmark \\
+&\textrm{(\ref{nabla cdot E}): }\nabla \cdot \vec{E}_1 = \nabla \cdot By \hat{x} = \frac{\partial}{\partial x} By = 0 \hspace{1cm} \checkmark \\
 &\textrm{(\ref{nabla cdot vecB}): } \nabla \cdot \vec{B} = \nabla \cdot Bt \hat{z} = \frac{\partial}{\partial z} Bt = 0 \hspace{1cm} \checkmark \\
 &\textrm{(\ref{nabla times E}): } \nabla \times \vec{E} = \nabla \times B y \hat{x} = -B \hat{z} = -\frac{\partial \vec{B}}{\partial t}   \hspace{1cm} \checkmark \\
 &\textrm{(\ref{nabla times vecB}): } \nabla \times \vec{B} = \nabla \times Bt\hat{z} = 0 = \mu\epsilon_0\frac{\partial \vec{E}}{\partial t}\hspace{1cm} \checkmark 
 \end{align}
+Does this solution make sense physically? We have a magnetic field changing uniformly through time and it creates an electric field that is linearly increasing in y space in the $\hat{x}$ direction. By analogy we can also find another solution to $\vec{E}$ by assuming $\vec{E}_2 = (ax+by+cz)\hat{y}$ and then by a method analogous to (\ref{c haty-b hatz}), we get $\vec{E}_2 = -Bx\hat{y}$. And so by superposition we can also have a solution
+\begin{align}
+\vec{E}_{1+2} = B(y \hat{x}-x\hat{y}).
+\end{align}
+If we plot this using mathematica we can see that it's a radial function around the z axis where our magnetic field is changing, which makes sense as a physical situation (see figure 1).
+
+\begin{center}
+	\includegraphics[]{E1plus2.png}
+	
+	{\footnotesize \textbf{Figure 1.} A plot of $\vec{E}_{1+2}$ using B=1 in the x-y plane.}
+\end{center}
 
 \begin{thebibliography}{9}
 	\bibitem{brain} Our brains.
