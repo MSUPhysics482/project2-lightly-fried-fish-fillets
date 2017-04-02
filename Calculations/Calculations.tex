@@ -100,11 +100,48 @@ E_{n}^{(1)} = \mu_BBm_j\left[1+\frac{j(j+1)-\ell(\ell+1)+\frac{3}{4} }{2j(j+1)} 
 This result in (\ref{E_{n}^{(1)}}) can be used for an explicit state of the hydrogen atom. For example, consider the $2P_{3/2}$ state. This has $n=2$, $\ell =1$, $s=\frac{1}{2}$, and $j=\frac{3}{2}$. The $m_j$ values can thus be determined by the set $m_j = \{m_j=j+n|-j \geq m_j \geq j \textrm{ and } n \in \mathbb{Z}\} = \{-\frac{3}{2},-\frac{1}{2}, \frac{1}{2}, \frac{3}{2} \}$, which tells us there will be 4 different energy splits for this state. Using these values gives us a $g_L=\frac{4}{3}$ and so our energy splits are
 \begin{align}
 E_{2P_{3/2}}^{(1)} = \begin{cases}
-\frac{\mu_BB}{2} & m_j = \frac{3}{2}\\ 
-\frac{2\mu_BB}{3} & m_j = \frac{1}{2} \\
--\frac{2\mu_BB}{3}& m_j = -\frac{1}{2} \\
--\frac{\mu_BB}{2} &m_j = -\frac{3}{2}
+\frac{\mu_BB}{2} & \textrm{for }m_j = \frac{3}{2}\\ 
+\frac{2\mu_BB}{3} & \textrm{for }m_j = \frac{1}{2} \\
+-\frac{2\mu_BB}{3}& \textrm{for }m_j = -\frac{1}{2} \\
+-\frac{\mu_BB}{2} & \textrm{for }m_j = -\frac{3}{2}
 \end{cases}  
+\end{align}
+
+\section{Linearly Changing Magnetic Field}
+
+Consider Maxwell's Equations, which are the system of partial differential equations describing classical electromagnetism. $\vec{P}$ is the polarization field, $\vec{D}$ is the electric displacement field, $\rho$ is the charge density, $\vec{E}$ is the electric field, $\vec{B}$ is the magnetic field, and $\vec{J}$ is the current density. In the MKS system of units (where $\epsilon_0$ is the permittivity of free space and $\mu_0$ is the permeability of free space), the equations are written 
+\begin{multicols}{2}
+	\noindent
+	\begin{align}
+	\nabla \cdot \vec{E} &= \frac{\rho}{\epsilon_0} \label{nabla cdot E}\\
+	\nabla \times \vec{E} &= -\frac{\partial \vec{B}}{\partial t} \label{nabla times E}
+	\end{align}
+	\begin{align}
+	\nabla \cdot \vec{B} &= 0  \label{nabla cdot vecB}\\
+	\nabla \times \vec{B} &= \mu_0\vec{J}+\epsilon_0\mu_0\frac{\partial \vec{E}}{\partial t} \label{nabla times vecB}
+	\end{align}
+\end{multicols}
+It may seem reasonable to look at the Zeeman effect with regards to a linear magnetic field since that would be a simple case. However should we model this as a linear $\vec{B}$ with regard to position or linear $\vec{B}$ with regard to time? If we allow $\vec{B}_{linear, z} \equiv B z \hat{z}$, then we can see there is a violation of (\ref{nabla cdot vecB}). This can be easily seen as $\nabla \cdot B z \hat{z} = B \neq 0$ for any $b\neq 0$. This is an impossible magnetic field. 
+
+Consider $\vec{B} = Bt \hat{z}$. The divergence is zero since it has no spacial dependence which satisfies (\ref{nabla cdot vecB}). Similarly, the curl is zero for the same reason. If we assume we are within a vacuum (other than our single hydrogen atom we are modeling), then by (\ref{nabla times vecB}), we have $\frac{\partial \vec{E}}{\partial t} = 0$, which implies the electric field is a constant throughout time. By (\ref{nabla times E}), the electric field must satisfy $\nabla \times \vec{E} = -B \hat{z}$. If we take the curl of both sides of this we get
+\begin{align}
+\nabla \times(\nabla \times \vec{E}) = \nabla (\nabla \cdot \vec{E}) - \nabla^2 \vec{E} = -\nabla \times B \hat{z}.
+\end{align}
+Using our assumption of a vacuum and (\ref{nabla cdot E}), this becomes 
+\begin{align}
+ \nabla^2 \vec{E} = \nabla \times B \hat{z} = 0 \implies \frac{\partial^2 E_x}{\partial x^2}+\frac{\partial^2 E_y}{\partial y^2}+\frac{\partial^2 E_z}{\partial z^2}=0
+\end{align}
+
+Consider a one dimensionally changing electric field with spacial dependence and no time dependence. This could potentially be produced in a lab so it is a good example. We can see a trivial solution to this would be $\vec{E} = (ax+by+cz) \hat{x}$, where $a,b,c$ are some constants. By (\ref{nabla times E}), we know 
+\begin{align}
+c \hat{y}-b \hat{z} = -B \hat{z} \implies b \equiv B \implies \vec{E} = B y\hat{x}.
+\end{align}
+So thus from out magnetic field $\vec{B} = Bt\hat{z}$, we require that there also be an electric field $\vec{E}=By \hat{x}$ in order for Maxwell's equations to be satisfied. Let us double check quickly. 
+\begin{align}
+&\textrm{(\ref{nabla cdot E}): }\nabla \cdot \vec{E} = \nabla \cdot By \hat{x} = \frac{\partial}{\partial x} By = 0 \hspace{1cm} \checkmark \\
+&\textrm{(\ref{nabla cdot vecB}): } \nabla \cdot \vec{B} = \nabla \cdot Bt \hat{z} = \frac{\partial}{\partial z} Bt = 0 \hspace{1cm} \checkmark \\
+&\textrm{(\ref{nabla times E}): } \nabla \times \vec{E} = \nabla \times B y \hat{x} = -B \hat{z} = -\frac{\partial \vec{B}}{\partial t}   \hspace{1cm} \checkmark \\
+&\textrm{(\ref{nabla times vecB}): } \nabla \times \vec{B} = \nabla \times Bt\hat{z} = 0 = \mu\epsilon_0\frac{\partial \vec{E}}{\partial t}\hspace{1cm} \checkmark 
 \end{align}
 
 \begin{thebibliography}{9}
