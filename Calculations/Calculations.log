@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.8)  2 APR 2017 15:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.8)  2 APR 2017 17:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1312,7 +1312,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[2] <E1plus2.png, id=102, 361.35pt x 361.35pt>
+[2] <E1plus2.png, id=103, 361.35pt x 361.35pt>
 File: E1plus2.png Graphic file (type png)
  <use E1plus2.png>
 Package pdftex.def Info: E1plus2.png used on input line 153.
@@ -1333,19 +1333,19 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [4 <./E1plus2.png (PNG copy)>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 164.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 164.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 170.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 170.
  (./Calculations.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 164.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 164.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 170.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 170.
 Package rerunfilecheck Info: File `Calculations.out' has not changed.
 (rerunfilecheck)             Checksum: 0A87209196E26EAB21058B657369CAD4;797.
  ) 
 Here is how much of TeX's memory you used:
- 45060 strings out of 494953
- 1025798 string characters out of 6180977
+ 45061 strings out of 494953
+ 1025809 string characters out of 6180977
  1363242 words of memory out of 5000000
- 47719 multiletter control sequences out of 15000+600000
+ 47720 multiletter control sequences out of 15000+600000
  13551 words of font info for 52 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,17n,77p,10482b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1366,10 +1366,10 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on Calculations.pdf (4 pages, 245926 bytes).
+Output written on Calculations.pdf (4 pages, 248678 bytes).
 PDF statistics:
- 190 PDF objects out of 1000 (max. 8388607)
- 135 compressed objects within 2 object streams
+ 192 PDF objects out of 1000 (max. 8388607)
+ 137 compressed objects within 2 object streams
  31 named destinations out of 1000 (max. 500000)
  42 words of extra memory for PDF output out of 10000 (max. 10000000)
 
