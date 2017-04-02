@@ -50,7 +50,47 @@
 	{\Large E\&M II - Project 2 Calculations.}
 \end{center}
 
+The \textbf{Zeeman effect} is an effect that comes about from putting an atom in a magnetic field. The magnetic field causes a magnetic moment to be produced and perturbs the energy levels of the atom causing spectral line shifts to appear when modeled or measured with spectroscopy. 
 
+\section{Hydrogen Atom First Order Magnetic Field Energy Corrections}
+To begin, the unperturbed wave functions of hydrogen is given by 
+\begin{align}
+H^{(0)} = \underbrace{\frac{\vec{p}^2}{2m}}_{\textrm{Kinetic term}}-\underbrace{\frac{\hbar c \alpha}{r}}_{\textrm{Potential term}}.
+\end{align}
+Consider the atom now in a magnetic field $\vec{B}$. The electrons spin will yield a magnetic moment $\vec{\mu}_S=\frac{-eg_s}{2m}\vec{S}$. The energy interaction of a single magnetic moment $\vec{\mu}$ with a fixed external magnetic field is given by $H^{\mu}= - \mu \cdot \vec{B}$ and so the Hamiltonian change due to this effect is $H_{S}^{(1)} =  -\mu_s \cdot \vec{B} = \frac{eg_s}{2m}\vec{S}\cdot \vec{B}$. There is also a correction due to the angular momentum of the electron. If we assume that the electron is moving in a circle, then this has a magnetic dipole $\mu_L = \frac{-e}{2m}\vec{L}$ and so there exists another correction to the Hamiltonian $H_L^{(1)} = -\mu_L \cdot\vec{B} = \frac{eg_L}{2m}\vec{L}\cdot \vec{B}$. Now, $g_s$ is a bi-products of the Dirac equation has a value of $g_s=s$. Combining these terms together give the total Zeeman effect to the Hamiltonian $H_{magnetic}^{(1)}$,
+\begin{align}
+H_{magnetic}^{(1)} \equiv H_{mag}^{(1)}= \frac{e}{2m}(\vec{L}+2\vec{S})\cdot \vec{B} = \frac{\mu_B}{\hbar}(\vec{L}+2\vec{S})\cdot \vec{B},
+\end{align} 
+where $\mu_B=\frac{e\hbar}{2m}$ is the Bohr magneton.
+
+If we are just considering the changes that come about from the Zeeman effect, we can ignore other Hamiltonian perturbations such as the fine structure and hyperfine structure interactions. Assume that $\vec{B} \equiv B\hat{z}$ then the Hamiltonian will only contain z components after performing the dot product giving $H_{mag}^{(1)} = \frac{\mu_B}{\hbar}(L_z+2S_z)B$. Now, $\vec{J}=\vec{L}+\vec{S} \implies L_z = J_z-S_z$ and so
+$H_{mag}^{(1)} = \frac{\mu_B}{\hbar}(J_z+S_z)B$. From perturbation theory we can solve for the first order energy corrections to this using
+\begin{align}
+E_{n}^{(1)} &= \langle n j m_j \ell s| H_{mag}^{(1)}|n j m_j \ell s \rangle \nonumber\\
+&= \frac{\mu_BB}{\hbar}\langle n j m_j \ell s| (J_z+S_z)|n j m_j \ell s \rangle \nonumber\\
+&= \frac{\mu_BB}{\hbar}\left(\hbar m_j+\langle n j m_j \ell s| S_z|n j m_j \ell s \rangle \right). \label{<njmls|S_z|nlmls>}
+\end{align}
+We can determine $S_z$ by projecting $\vec{S}$ onto $\vec{J}$ which gives $\vec{S} = \frac{\vec{J}\cdot\vec{S}}{\vec{J}^2}\vec{J}$ and then using the substitution that 
+\begin{align}
+\vec{J}\cdot \vec{S} = (\vec{L}+\vec{S})\cdot \vec{S} = \vec{L}\cdot\vec{S}+\vec{S}^2 = \frac{1}{2}(\vec{J^2}-\vec{L^2}-\vec{S}^2)+\vec{S^2} = \frac{1}{2}(\vec{J^2}-\vec{L^2}+\vec{S}^2).
+\end{align}
+This, we have
+\begin{align}
+S_z = \frac{(\vec{J^2}-\vec{L^2}+\vec{S}^2)}{2\vec{J}^2}J_z,
+\end{align}
+and so the undetermined matrix element in (\ref{<njmls|S_z|nlmls>}) becomes 
+\begin{align}
+\langle n j m_j \ell s| S_z|n j m_j \ell s \rangle &= \langle n j m_j \ell s| \frac{(\vec{J^2}-\vec{L^2}+\vec{S}^2)}{2\vec{J}^2}J_z|n j m_j \ell s \rangle \nonumber \\
+&= m_j \hbar \frac{j(j+1)-\ell(\ell+1)+s(s+1)}{2j(j+1)}.
+\end{align}
+Plugging this back into (\ref{<njmls|S_z|nlmls>}) gives us 
+\begin{align}
+\boxed{E_{n}^{(1)} = \mu_BBm_j\left[1+\frac{j(j+1)-\ell(\ell+1)+s(s+1)}{2j(j+1)}\right] = \mu_BBm_jg_L}, \label{E_{n}^{(1)}}
+\end{align}
+where $g_L$ is the Land\'{e} g factor
+\begin{align}
+g_L = 1+\frac{j(j+1)-\ell(\ell+1)+s(s+1)}{2j(j+1)}.
+\end{align}
 
 \begin{thebibliography}{9}
 	\bibitem{brain} Our brains.
