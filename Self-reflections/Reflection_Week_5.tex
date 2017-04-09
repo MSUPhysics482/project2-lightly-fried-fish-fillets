@@ -1,0 +1,67 @@
+\documentclass[11pt]{article}
+
+%%% These are some packages that are useful
+\usepackage{circuitikz} %used for circuit diagrams
+\usepackage{lastpage} %allows us to determine how many total pages there are
+\usepackage{amsfonts, lipsum}
+\usepackage{amsmath,amssymb, amscd,amsbsy, amsthm, enumerate}
+\usepackage{mdframed, titlesec, setspace,verbatim, multicol}
+\usepackage[top=1in, bottom=1in, left=1in, right=1in]{geometry} %sets the margins
+\usepackage[unicode]{hyperref} %enhanced references
+\usepackage{tikz, pgfplots, xcolor}
+\usepackage{fancyhdr} %creates a fancy header for labeling document/name/date 
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{vwcol}  
+\usepackage{enumitem}
+
+%%% Page formatting
+%\setlength{\headsep}{30pt}
+\setlength{\parindent}{25pt}
+\setlength{\textheight}{9in}
+
+%%% Header and Footer Info
+\pagestyle{fancy}
+\fancyhead[L]{{\large PHY 482 - \textbf{Project Reflections}}}
+\fancyhead[C]{\today}
+\fancyhead[R]{Name: Antonius Torode and Eric Aboud}
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage\ of \pageref{LastPage}}
+
+%%Use these commands to clear the fancyhdr settings and horizontal header line.
+%\fancyhf{} % sets both header and footer to nothing
+%\renewcommand{\headrulewidth}{0pt}
+
+%%% Document Starts now
+\begin{document} 
+
+\begin{center}
+	{\Large E \& M II - Project 2 Reflections Week 4.}
+\end{center}
+
+\subsubsection*{Week 1}
+
+For week one, Eric created a Google Document in which we both went in and answered questions regarding our topic (questions given by the homework). We worked together and also found sources and ideas we may be able to use later. This information was combined in the "EMProject2\_original draft.pdf" file in the "Project Outline (week 2-3 assignment)" folder of our github. After receiving our feedback, we spend a long time trying to find a different (more E \& M related) topic we could possibly do our project on. We ended up sticking to what we originally decided of the Zeeman effect but tried to narrow it down further. We then discussed what we should do and together in a google document created the first part of the "Project Outline.pdf" document located in the same folder previously listed. 
+
+\subsubsection*{Week 3}
+
+Week 3, Eric is off looking at Graduate schools or something of that order. Because of this, I wrote up a addition to our "Project Outline" file title "explanation of the models and theoretical calculations" in accordance with the assignment this week. After which I also included an "Updated Project Timeline" included in the same file in order to attempt corrections from the previous feedback. I also have included a poster template from a previous project of mine we may be able to use for our final poster as well as uploaded some handwritten calculations of the energy level shifts in the hydrogen atom due to a uniform magnetic field (the zeeman effect). So far the total work is a little weighted towards me as of this week but I expect to throw a large amount of the computational modeling at Eric once I can finish the calculations so it should even out in the wash. I also plan on moving the currect calculations over into a \LaTeX  document as soon as time permits with precise explanations of where everything comes from so we can better understand everything and see what we have.
+
+\subsubsection*{Week 4}
+
+This week (week 4) Antonius did a bunch of math things and Eric made an energy level structure for the P$_{3/2}$ state in hydrogen.  Modeling the P$_{3/2}$ state of hydrogen gives us an idea of how difficult it may be to model more states and larger atoms.  Since this model has given us a base structure of the code, we can use it as a basis for extending our models.
+
+Antonius is definitely contributing to the mathematics more so than Eric (written by Eric), but Eric will continually do more as he won't be travelling most of the time.
+
+We still need to figure out how much we are going to be able to model, but it looks like we should be able to model the structure for deuterium along with an extended structure of hydrogen.
+
+Antonius - I have done the initial calculations for the hydrogen atom and Eric has modeled and example that I solved for in Python. I also attempted to explore what happens with a linearly (with time) changing magnetic field, which would be easy to determine the Zeeman effect for, but depending on the electric field which would have to exist, the stark effect may or may not be simple. I appear to have found one simple solution that satisfies all of maxwell's equations except there is some physical inconsistencies which may have come about from my assumption in a vacuum (any suggestions Danny?)
+
+
+\subsubsection*{Week 5}
+Eric - This week Antonius continued doing calculations and got some interesting and useful results.  I made more computational models of the energy level splittings and showed how the magnetic field changes them.  I am not 100\% how far we can extend this past hydrogen, but I think that we should have enough information and calculations for hydrogen since Antonius was able to calculate the induced electric field.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
