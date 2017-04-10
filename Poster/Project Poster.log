@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.8)  10 APR 2017 00:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.8)  10 APR 2017 09:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -901,23 +901,23 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Underfull \hbox (badness 5245) in paragraph at lines 195--195
+Underfull \hbox (badness 5245) in paragraph at lines 197--197
 []\T1/ppl/m/n/10 Consider $[] \OT1/cmr/m/n/10 = \OML/cmm/m/it/10 Bt[]$\T1/ppl/m
 /n/10 . By
  []
 
 
-Overfull \hbox (1.16124pt too wide) in paragraph at lines 195--195
+Overfull \hbox (1.16124pt too wide) in paragraph at lines 197--197
 [] 
  []
 
 <figures/E1plus2.png, id=33, 361.35pt x 361.35pt>
 File: figures/E1plus2.png Graphic file (type png)
  <use figures/E1plus2.png>
-Package pdftex.def Info: figures/E1plus2.png used on input line 195.
+Package pdftex.def Info: figures/E1plus2.png used on input line 197.
 (pdftex.def)             Requested size: 100.08397pt x 100.08006pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <8> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 195.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 197.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -926,19 +926,19 @@ Missing character: There is no ; in font nullfont!
 File: figures/observed.png Graphic file (type png)
 
 <use figures/observed.png>
-Package pdftex.def Info: figures/observed.png used on input line 220.
+Package pdftex.def Info: figures/observed.png used on input line 222.
 (pdftex.def)             Requested size: 163.09674pt x 74.75299pt.
  <figures/Bis1.png, id=35, 662.475pt x 607.26875pt>
 File: figures/Bis1.png Graphic file (type png)
 
 <use figures/Bis1.png>
-Package pdftex.def Info: figures/Bis1.png used on input line 220.
+Package pdftex.def Info: figures/Bis1.png used on input line 222.
 (pdftex.def)             Requested size: 163.09674pt x 149.50027pt.
  <figures/Bis4.png, id=37, 681.54625pt x 607.26875pt>
 File: figures/Bis4.png Graphic file (type png)
 
 <use figures/Bis4.png>
-Package pdftex.def Info: figures/Bis4.png used on input line 220.
+Package pdftex.def Info: figures/Bis4.png used on input line 222.
 (pdftex.def)             Requested size: 163.09674pt x 145.32123pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -948,7 +948,7 @@ Missing character: There is no ; in font nullfont!
 File: figures/Energylevelstrimmed.png Graphic file (type png)
 
 <use figures/Energylevelstrimmed.png>
-Package pdftex.def Info: figures/Energylevelstrimmed.png used on input line 249
+Package pdftex.def Info: figures/Energylevelstrimmed.png used on input line 251
 .
 (pdftex.def)             Requested size: 173.97052pt x 73.69554pt.
 Missing character: There is no ; in font nullfont!
@@ -963,11 +963,11 @@ ng (PNG copy)>] (./Project Poster.aux) )
 Here is how much of TeX's memory you used:
  19259 strings out of 494953
  411314 string characters out of 6180977
- 509122 words of memory out of 5000000
+ 510114 words of memory out of 5000000
  22140 multiletter control sequences out of 15000+600000
  33063 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,23n,92p,527b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,23n,92p,514b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/en
 c/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmex10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextr
@@ -988,7 +988,7 @@ e/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share
 /texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf
 -dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on "Project Poster.pdf" (1 page, 622410 bytes).
+Output written on "Project Poster.pdf" (1 page, 622735 bytes).
 PDF statistics:
  128 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
