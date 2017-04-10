@@ -81,7 +81,7 @@ linewidth=2pt % Width of the border lines around content boxes
 %
 {\includegraphics[height=4em]{MSU.jpg}} % First university/lab logo on the left
 {\bf\textsc{Zeeman Effect}\vspace{0.5em}} % Poster title
-{\textsc{Antonius Torode and Eric Aboud -  \hspace{12pt} Michigan State University \\ Department of Physics \& Astronomy}} % Author names and institution
+{\textsc{Antonius Torode and Eric Aboud \\ Michigan State University - Department of Physics \& Astronomy}} % Author names and institution
 {\includegraphics[height=4em]{MSU.jpg}} % Second university/lab logo on the right
 
 %----------------------------------------------------------------------------------------
@@ -90,7 +90,7 @@ linewidth=2pt % Width of the border lines around content boxes
 
 \headerbox{Introduction \& History}{name=objectives,column=0,row=0}{
 
-
+The Zeeman effect is an effect that comes about from putting an atom in a magnetic field. The magnetic field causes a magnetic moment to be produced and perturbs the energy levels of the atom causing spectral line shifts to appear when modeled or measured with spectroscopy.
 
 \vspace{0.3em} % When there are two boxes, some whitespace may need to be added if the one on the right has more content
 }
@@ -99,24 +99,49 @@ linewidth=2pt % Width of the border lines around content boxes
 %	Discovery & Properties
 %----------------------------------------------------------------------------------------
 
-\headerbox{Discovery \& Properties }{name=introduction,column=3,row=0,bottomaligned=objectives}{
-
+\headerbox{Observations }{name=introduction,column=3,row=0,bottomaligned=objectives}{
+The Zeeman Effect is a real phenomenon that can be observed in spectroscopy when magnetic fields effect the radiation (see figure 3). This can be used to determine where magnetic fields are present and their strength depending on the separation of observed spectral energy levels.
 
 }
 
 %----------------------------------------------------------------------------------------
-%	Derivation of the Casimir Force
+%	Perturbation Theory \& The Zeeman Effect
 %----------------------------------------------------------------------------------------
 
-\headerbox{Derivation of Induced Electric Field}{name=results,column=1,span=2,row=0}{
+\headerbox{Perturbation Theory \& The Zeeman Effect}{name=results,column=1,span=2,row=0}{
 
 \begin{multicols}{2}
-
+	The unperturbed wave functions of hydrogen is given by 
+	\begin{align}
+	H^{(0)} = \underbrace{\frac{\vec{p}^2}{2m}}_{\textrm{Kinetic term}}-\underbrace{\frac{\hbar c \alpha}{r}}_{\textrm{Potential term}}.
+	\end{align}
+	The total Zeeman Effect to the Hamiltonian is given by determining the effect of a constant magnetic field $\vec{B}$,
+	\begin{align}
+	H_{mag}^{(1)}= \frac{e}{2m}(\vec{L}+2\vec{S})\cdot \vec{B} = \frac{\mu_B}{\hbar}(\vec{L}+2\vec{S})\cdot \vec{B},
+	\end{align} 
+	where $\mu_B=\frac{e\hbar}{2m}$ is the Bohr magneton. From perturbation theory we can solve for the first order energy corrections that come from $H_{mag}^{(1)}$ by using 
+	\begin{align}
+	E_{n}^{(1)} &= \langle n j m_j \ell s| H_{mag}^{(1)}|n j m_j \ell s \rangle.
+	\end{align}
+	This gives a general result 
+	\begin{align}
+	E_{n}^{(1)}  = \mu_BBm_jg_L, \label{E_{n}^{(1)}}
+	\end{align}
+	where $g_L$ is the Land\'{e} g factor. This result in (\ref{E_{n}^{(1)}}) can be used for an explicit state of the hydrogen atom. For example, consider the $2P_{3/2}$ state. This has $n=2$, $\ell =1$, $s=\frac{1}{2}$, and $j=\frac{3}{2}$. The $m_j$ values can thus be determined by the set $m_j = \{-\frac{3}{2},-\frac{1}{2}, \frac{1}{2}, \frac{3}{2} \}$, which tells us there will be 4 different energy splits for this state. Using these values gives us a $g_L=\frac{4}{3}$ and so our energy splits are
+	\begin{align}
+	E_{2P_{3/2}}^{(1)} = \begin{cases}
+	2\mu_BB & \textrm{for }m_j = \frac{3}{2}\\ 
+	\frac{2\mu_BB}{3} & \textrm{for }m_j = \frac{1}{2} \\
+	-\frac{2\mu_BB}{3}& \textrm{for }m_j = -\frac{1}{2} \\
+	-2\mu_BB & \textrm{for }m_j = -\frac{3}{2}
+	\end{cases}  \label{l=1 energies}
+	\end{align}
 \end{multicols}
+\vspace{0.01cm}
 }
 
 %----------------------------------------------------------------------------------------
-%	REFERENCES
+%	REFERENCES LEFT
 %----------------------------------------------------------------------------------------
 
 \headerbox{References}{name=references,column=0,above=bottom}{
@@ -125,11 +150,10 @@ linewidth=2pt % Width of the border lines around content boxes
 \scriptsize{ % Reduce the font size in this block
 \begin{enumerate}
 \itemsep0em 
-\item John Baez on the number 24. The Rankin Lectures 2008. Youtube. John Baez. University of California. 16 May. 2012. Web. \label{baez}
-\item Gibbs, Philip. "What Is the Casimir Effect?" The Casimir Effect. University of California, 1997. Web. 16 Oct. 2016. 
-\item Ramanujan Aiyangar, Srinivasa, 1887-l  920. Ramanujans notebooks. Mathematics-Collected works. 1. Berndt, Bruce C., 1939- II. Title. QA3. R33. 1985. 510. 84-20201 \label{ramanujin}
-
+\item Griffiths, David J. Introduction to Quantum Mechanics. 2nd ed. Harlow: Pearson, 2014. Print.
+\item Image from https://en.wikipedia.org/wiki/Zeeman\_effect
 \end{enumerate}
+\vspace{0.5cm}
 }}
 
 %----------------------------------------------------------------------------------------
@@ -137,48 +161,58 @@ linewidth=2pt % Width of the border lines around content boxes
 %----------------------------------------------------------------------------------------
 
 \headerbox{Addendum and Final Remarks }{name=futureresearch,column=1,span=2,aligned=references,above=bottom}{ % This block is as tall as the references block
-\begin{multicols}{2}
+As shown above, our attempts to determine the induced electric field and apply it to the Zeeman Effect wee unsuccessful. For any constant magnetic field, we are able to generate a plot of the correction splittings as shown in figure 4 and 5. It is important to note that with a time dependent magnetic field, we would need to use time-dependent perturbation theory to solve for the energy corrections.
+}
 
+
+%----------------------------------------------------------------------------------------
+%	Changing Magnetic Fields \& Induced Electric Fields
+%----------------------------------------------------------------------------------------
+
+\headerbox{Changing Magnetic Fields \& Induced Electric Fields}{name=conclusion,column=1,span=2,row=0,below=results,above=references}{
+
+\begin{multicols}{3}
+Consider $\vec{B} = Bt \hat{z}$. By Maxwell's Equations we have $\frac{\partial \vec{E}}{\partial t} = 0$, which implies the electric field is a constant throughout time. Similarly, the electric field must satisfy $\nabla \times \vec{E} = -B \hat{z}$. If we take the curl of both sides of this we get
+\begin{align*}
+\nabla \times(\nabla \times \vec{E}) &= \nabla (\nabla \cdot \vec{E})- \nabla^2 \vec{E} \\ &= -\nabla \times B \hat{z} =0.
+\end{align*}
+Using our assumption of a vacuum, this becomes 
+\begin{align*}
+\nabla^2 \vec{E} =  0 \label{del^2 E=0}
+\end{align*}
+From this and our magnetic field, we require that there be an electric field $\vec{E}_1=By \hat{x}$ in order for Maxwell's equations to be satisfied. By analogy we can also find another solution to $\vec{E}$ as $\vec{E}_2 = -Bx\hat{y}$. And so by superposition we can also have a solution
+\begin{align}
+\vec{E}_{1+2} = B(y \hat{x}-x\hat{y}).
+\end{align}
+If we plot this using Mathematica we can see that it's a radial function around the z axis where our magnetic field is changing, which makes sense for it to be radially dependent. However, if we notice, it is increasing with r, which means it is divergent and thus does not make sense physically.
+
+\begin{center}
+	\includegraphics[width=0.22\textwidth]{E1plus2.png}
+	
+	{\footnotesize \textbf{Figure 2.} A plot of $\vec{E}_{1+2}$ using B=1 in the x-y plane.}
+\end{center}
 \end{multicols}
 }
 
 %----------------------------------------------------------------------------------------
-%	References RIGHT
+%	Computational Models
 %----------------------------------------------------------------------------------------
 
-\headerbox{References}{name=contact,column=3,aligned=references,above=bottom}{ % This block is as tall as the references block
-
-\scriptsize{ % Reduce the font size in this block
-	\begin{enumerate}
-		\setcounter{enumi}{3}
-		\itemsep0em 
-		\item Casimir Effect \& Black Holes - Sixty Symbols. Prod. Brady Haran. Perf. Mike Merrifield Ph.D. Youtube. University of Nottingham, 20 Mar. 2014. Web. 
-		\item H.B.G. Casimir, Proc. Kon. Ned. Akad. Wetensch. B51, 793 (1948) \label{casimir}
-		\item Sum of Natural Numbers (second proof and extra footage). Prod. Brady Haran. Perf. Ed Copeland Ph.D and Tony Padilla Ph.D. Youtube. University of Nottingham, 11 Jan. 2015. Wb.
-	\end{enumerate}
-}}
-
-%----------------------------------------------------------------------------------------
-%	Implications and Applications
-%----------------------------------------------------------------------------------------
-
-\headerbox{Implications and Applications}{name=conclusion,column=1,span=2,row=0,below=results,above=references}{
-
-\begin{multicols}{2}
-
-\end{multicols}
-}
-
-%----------------------------------------------------------------------------------------
-%	Astounding Mathematics
-%----------------------------------------------------------------------------------------
-
-\headerbox{Computational Models}{name=method,column=3,below=objectives,bottomaligned=conclusion}{ % This block's bottom aligns with the bottom of the conclusion block
+\headerbox{Computational Models}{name=method,column=3,below=objectives,bottomaligned=references}{ % This block's bottom aligns with the bottom of the conclusion block
 \small{
 	
 \begin{center}
-	\includegraphics[width=0.7\linewidth]{figures/Bis1}
-	\includegraphics[width=0.7\linewidth]{figures/Bis4}
+	\includegraphics[width=0.75\linewidth]{figures/observed}
+	
+	{\footnotesize \textbf{Figure 3.} Observations of the Zeeman Effect from spectroscopy of a sunspot [2].}
+	
+	\includegraphics[width=0.75\linewidth]{figures/Bis1}
+	
+	{\footnotesize \textbf{Figure 4.} Relative hydrogen Energy corrections.}
+	
+	\includegraphics[width=0.75\linewidth]{figures/Bis4}
+	
+	{\footnotesize \textbf{Figure 5.} Relative hydrogen Energy corrections with an increased magnetic field.}
 \end{center}
 	
 	
@@ -186,12 +220,32 @@ linewidth=2pt % Width of the border lines around content boxes
 }}
 
 %----------------------------------------------------------------------------------------
-%	Analytic Continuation
+%	Land\'{e}  g Factor
 %----------------------------------------------------------------------------------------
 
 \headerbox{Land\'{e}  g Factor}{name=results2,column=0,below=objectives,bottomaligned=conclusion}{ % This block's bottom aligns with the bottom of the conclusion block
 \small{
-
+Consider the Lande \'{e} g factor for the hydrogen atom Zeeman Effect with a spin value of $s=\frac{1}{2}$,
+\begin{align}
+g_L = \frac{12j(j+1)-4\ell(\ell+1)+3}{8j(j+1)}.
+\end{align}
+Now, $m_j = \{j+k|-j \leq m_j \leq j \textrm{ and } k \in \mathbb{Z}\}$ which can be expressed in terms of $\ell$ as
+\begin{align*}
+m_j = \{\ell \pm \frac{1}{2}+k|-\ell \leq m_j\pm \frac{1}{2} \leq \ell \pm 1 \textrm{ and } k \in \mathbb{Z}\}.
+\end{align*}
+Using these two forms of $m_j$ and $g_L$, we can write out energy corrections in terms of a single variable for both $j=\ell+\frac{1}{2}$ and $j=\ell-\frac{1}{2}$ respectively as,
+\begin{align*}
+E_{n}^{(1)} = \mu_BB\begin{cases}
+	\frac{2+2l}{1+2\ell}(\ell + \frac{1}{2}-k) & \textrm{for } 0 \leq k \leq 2\ell+1\\
+	\frac{2l}{1+2\ell}(\ell - \frac{1}{2}-k) & \textrm{for } 0 \leq k \leq 2\ell-1
+	\end{cases}.
+\end{align*}
+Now we have a general formula for the corrected energy levels that we can plot for any $\ell$ value for spin $s=\frac{1}{2}$ hydrogen (demonstrated in figure 1).
+\begin{center}
+	\includegraphics[width=0.8\textwidth]{figures/Energylevelstrimmed.png}
+	
+	{\footnotesize \textbf{Figure 1.} Relative hydrogen Energy corrections for $\ell=1$ and $\ell=2$ with units of $\mu_B=B=1$.}
+\end{center}
 }}
 
 %----------------------------------------------------------------------------------------
