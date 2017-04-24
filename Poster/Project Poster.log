@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  16 APR 2017 18:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.5.22)  24 APR 2017 12:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -940,23 +940,19 @@ File: figures/observed.png Graphic file (type png)
 <use figures/observed.png>
 Package pdftex.def Info: figures/observed.png used on input line 222.
 (pdftex.def)             Requested size: 163.09674pt x 74.75299pt.
- <figures/Bis1.png, id=35, 662.475pt x 607.26875pt>
-File: figures/Bis1.png Graphic file (type png)
 
-<use figures/Bis1.png>
-Package pdftex.def Info: figures/Bis1.png used on input line 222.
-(pdftex.def)             Requested size: 163.09674pt x 149.50027pt.
- <figures/Bis4.png, id=37, 681.54625pt x 607.26875pt>
-File: figures/Bis4.png Graphic file (type png)
+<figures/EnergyLevelsWithBothBFields.png, id=35, 681.54625pt x 607.26875pt>
+File: figures/EnergyLevelsWithBothBFields.png Graphic file (type png)
 
-<use figures/Bis4.png>
-Package pdftex.def Info: figures/Bis4.png used on input line 222.
+<use figures/EnergyLevelsWithBothBFields.png>
+Package pdftex.def Info: figures/EnergyLevelsWithBothBFields.png used on input 
+line 222.
 (pdftex.def)             Requested size: 163.09674pt x 145.32123pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-<figures/Energylevelstrimmed.png, id=38, 578.16pt x 244.915pt>
+<figures/Energylevelstrimmed.png, id=37, 578.16pt x 244.915pt>
 File: figures/Energylevelstrimmed.png Graphic file (type png)
 
 <use figures/Energylevelstrimmed.png>
@@ -970,14 +966,14 @@ Missing character: There is no ; in font nullfont!
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figur
 es/BG3.jpg> <./figures/MSU.jpg> <./figures/E1plus2.png (PNG copy)> <./figures/o
-bserved.png (PNG copy)> <./figures/Bis1.png> <./figures/Bis4.png> <./figures/En
-ergylevelstrimmed.png (PNG copy)>]
+bserved.png (PNG copy)> <./figures/EnergyLevelsWithBothBFields.png> <./figures/
+Energylevelstrimmed.png (PNG copy)>]
 (./Project Poster.aux) ) 
 Here is how much of TeX's memory you used:
- 19259 strings out of 493014
- 412935 string characters out of 6133351
- 514948 words of memory out of 5000000
- 22396 multiletter control sequences out of 15000+600000
+ 19254 strings out of 493014
+ 412959 string characters out of 6133351
+ 513806 words of memory out of 5000000
+ 22392 multiletter control sequences out of 15000+600000
  33063 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,23n,92p,514b,981s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1002,10 +998,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/
 ive/2016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on "Project Poster.pdf" (1 page, 622739 bytes).
+Output written on "Project Poster.pdf" (1 page, 570268 bytes).
 PDF statistics:
- 128 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
  78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 150 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 145 words of extra memory for PDF output out of 10000 (max. 10000000)
 
