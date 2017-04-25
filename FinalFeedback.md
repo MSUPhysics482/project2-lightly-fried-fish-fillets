@@ -1,0 +1,3 @@
+## HW13; Score: 20/20
+
+Fellas, to answer your posed questions, yes, I think by telling the audience the research questions up front, you are helping them navigate what you are doing. I think the thing you probably need to explain either in person or on the poster is how you are incorporating the electric field in your calculations. The fact that your electric field is distributed in space (and non-constant) is unique compared the to the typical fixed direction and magnitude Stark setup. So, explaining that and how that goes into your calculations is important (where is the atom when you are performing these calculations?).
