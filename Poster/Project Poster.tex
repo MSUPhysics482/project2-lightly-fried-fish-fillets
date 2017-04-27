@@ -99,8 +99,18 @@ The Zeeman effect comes about from putting an atom in a magnetic field. The magn
 %	Discovery & Properties
 %----------------------------------------------------------------------------------------
 
-\headerbox{Observations }{name=introduction,column=3,row=0,bottomaligned=objectives}{
+\headerbox{Questions We Explore }{name=questions,column=3,row=0,bottomaligned=objectives}{
+	How do magnetic fields affect atomic nuclei, specifically hte hydrogen atom? How can we model the affects of a magnetic field on the hydrogen atom? What happens to our models and predictions if we allow for a varying magnetic field, specifically one increasing linearly in time?
+}
+
+\headerbox{Observations }{name=observations,column=3,row=1,below=questions}{
 The Zeeman Effect is a real phenomenon that can be observed in spectroscopy when magnetic fields effect the radiation (see figure 3). This can be used to determine where magnetic fields are present and their strength depending on the separation of observed spectral energy levels.
+
+\begin{center}
+	\includegraphics[width=0.75\linewidth]{figures/observed}
+	
+	{\footnotesize \textbf{Figure 3.} Observations of the Zeeman Effect from spectroscopy of a sunspot [2].}
+\end{center}
 }
 
 %----------------------------------------------------------------------------------------
@@ -151,8 +161,8 @@ The Zeeman Effect is a real phenomenon that can be observed in spectroscopy when
 \itemsep0em 
 \item Griffiths, David J. Introduction to Quantum Mechanics. 2nd ed. Harlow: Pearson, 2014. Print.
 \item Image from https://en.wikipedia.org/wiki/Zeeman\_effect
+\item  Griffiths, David J. Introduction to Electrodynamics. Harlow: Pearson, 2014. Print. 
 \end{enumerate}
-\vspace{0.5cm}
 }}
 
 %----------------------------------------------------------------------------------------
@@ -169,9 +179,9 @@ As shown above, the induced electric field of a linearly changing magnetic field
 %----------------------------------------------------------------------------------------
 
 \headerbox{Changing Magnetic Fields \& Induced Electric Fields}{name=conclusion,column=1,span=2,row=0,below=results,above=references}{
-
+{\small
 \begin{multicols}{3}
-Consider $\vec{B} = Bt \hat{z}$. By Maxwell's Equations we have $\frac{\partial \vec{E}}{\partial t} = 0$, which implies the electric field is a constant throughout time. Similarly, the electric field must satisfy $\nabla \times \vec{E} = -B \hat{z}$. If we take the curl of both sides of this we get
+Consider $\vec{B} = Bt \hat{z}$. By Maxwell's Equations [3] we have $\frac{\partial \vec{E}}{\partial t} = 0$, which implies the electric field is a constant throughout time. Similarly, the electric field must satisfy $\nabla \times \vec{E} = -B \hat{z}$. If we take the curl of both sides of this we get
 \begin{align*}
 \nabla \times(\nabla \times \vec{E}) &= \nabla (\nabla \cdot \vec{E})- \nabla^2 \vec{E} \\ &= -\nabla \times B \hat{z} =0.
 \end{align*}
@@ -179,36 +189,32 @@ Using the assumption of a vacuum, this becomes
 \begin{align*}
 \nabla^2 \vec{E} =  0 \label{del^2 E=0}
 \end{align*}
-From this and our magnetic field, we require that there be an electric field $\vec{E}_1=By \hat{x}$ in order for Maxwell's equations to be satisfied. By analogy we can also find another solution to $\vec{E}$ as $\vec{E}_2 = -Bx\hat{y}$. And so by superposition we can also have a solution
+Without boundary conditions, this does not have a unique solution. However, from this and our magnetic field, we can require that there be an electric field $\vec{E}_1=By \hat{x}$ in order for Maxwell's equations to be satisfied. By analogy we can also find another solution to $\vec{E}$ as $\vec{E}_2 = -Bx\hat{y}$. And so by superposition we can also have a solution
 \begin{align}
 \vec{E}_{1+2} = B(y \hat{x}-x\hat{y}).
 \end{align}
-This shows that with a changing magnetic field, we would see an electric field appear which could itself cause another corrections to the perturbed energies. This is known as the Stark Effect and in our case would introduce the correction
+This electric field as well as the magnetic field given both satisfy the wave equation as they should. This result shows that with a changing magnetic field, we would see an electric field appear which could itself cause another corrections to the perturbed energies. This is known as the Stark Effect and in our case would introduce the correction
 \begin{align}
 H_{elec}^{(1)}=-e\vec{r}\cdot\vec{E}=0.
 \end{align} 
 
 \begin{center}
-	\includegraphics[width=0.22\textwidth]{E1plus2.png}
+	\includegraphics[width=0.26\textwidth]{E1plus2.png}
 	
 	{\footnotesize \textbf{Figure 2.} A plot of $\vec{E}_{1+2}$ using B=1 in the x-y plane.}
 \end{center}
 \end{multicols}
-}
+}}
 
 %----------------------------------------------------------------------------------------
 %	Computational Models
 %----------------------------------------------------------------------------------------
 
-\headerbox{Computational Models}{name=method,column=3,below=objectives,bottomaligned=references}{ % This block's bottom aligns with the bottom of the conclusion block
+\headerbox{Computational Models}{name=method,column=3,below=observations,bottomaligned=references}{ % This block's bottom aligns with the bottom of the conclusion block
 \small{
 	
 \begin{center}
-	\includegraphics[width=0.75\linewidth]{figures/observed}
-	
-	{\footnotesize \textbf{Figure 3.} Observations of the Zeeman Effect from spectroscopy of a sunspot [2].}
-	
-	\includegraphics[width=0.75\linewidth]{figures/EnergyLevelsWithBothBFields}
+	\includegraphics[width=0.75\linewidth]{figures/EnergyLevelsWithBothBFieldsNOX}
 	
 	{\footnotesize \textbf{Figure 4.} Relative hydrogen Energy corrections.}
 	
@@ -216,6 +222,8 @@ H_{elec}^{(1)}=-e\vec{r}\cdot\vec{E}=0.
 	
 	%{\footnotesize \textbf{Figure 5.} Relative hydrogen Energy corrections with an increased magnetic field.}
 \end{center}
+
+Using the equation derived from the Land\'{e}  g Factor, the energy level shifts can be modeled. Above is a model using different $\vec{B}$ magnitudes which demonstrates the change in energy shifts as the magnetic field varies.
 	
 	
 
@@ -244,9 +252,9 @@ E_{n}^{(1)} = \mu_BB\begin{cases}
 \end{align*}
 Now we have a general formula for the corrected energy levels that we can plot for any $\ell$ value for spin $s=\frac{1}{2}$ hydrogen (demonstrated in figure 1).
 \begin{center}
-	\includegraphics[width=0.8\textwidth]{figures/Energylevelstrimmed.png}
+	\includegraphics[width=0.98\textwidth]{figures/Energylevelstrimmed.png}
 	
-	{\footnotesize \textbf{Figure 1.} Relative hydrogen Energy corrections for $\ell=1$ and $\ell=2$ with units of $\mu_B=B=1$.}
+	{\footnotesize \textbf{Figure 1.} Relative hydrogen Energy corrections for $\ell=1$ and $\ell=2$ with units of $\mu_B=B=1$ modeled using the derived energy correction formula over all real values.}
 \end{center}
 }}
 
